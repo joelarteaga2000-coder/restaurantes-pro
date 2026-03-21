@@ -64,17 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const detalle = document.getElementById("detalle").value.trim();
 
             const mensaje = `Hola.%0A%0A` +
-                `Quiero una página web como este demo de restaurante para mi negocio.%0A%0A` +
+                `Quiero enviar una solicitud al restaurante.%0A%0A` +
                 `Nombre: ${nombre || "No especificado"}%0A` +
                 `Teléfono: ${telefono || "No especificado"}%0A` +
-                `Tipo de negocio o solicitud: ${tipo || "No especificado"}%0A` +
+                `Tipo de solicitud: ${tipo || "No especificado"}%0A` +
                 `Categoría principal: ${categoria || "No especificado"}%0A` +
-                `Nombre del negocio o referencia: ${platillo || "No especificado"}%0A` +
-                `Día preferido para iniciar: ${dia || "No especificado"}%0A` +
-                `Horario de contacto: ${turno || "No especificado"}%0A` +
+                `Platillo o pedido principal: ${platillo || "No especificado"}%0A` +
+                `Día preferido: ${dia || "No especificado"}%0A` +
+                `Hora o turno: ${turno || "No especificado"}%0A` +
                 `Detalles adicionales: ${detalle || "No especificado"}`;
 
-            const whatsappURL = `https://wa.me/5215525051050?text=${mensaje}`;
+            const whatsappURL = `https://wa.me/5215512345678?text=${mensaje}`;
             window.open(whatsappURL, "_blank");
         });
     }
@@ -86,5 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     revealOnScroll();
+    heroParallax();
     handleHeaderScroll();
 });
